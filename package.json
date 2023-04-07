@@ -1,0 +1,30 @@
+{
+  "name": "testcafe-avantiuat05",
+  "version": "1.0.0",
+  "description": "Automation of Avanti UAT05",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome ./tests -s takeOnFails=true --disable-page-caching --disable-multiple-windows",
+    "test:chrome:5": "testcafe -c 5 chrome ./tests -s takeOnFails=true --disable-page-caching --disable-multiple-windows",
+    "test:chrome:headless:5": "testcafe -c 5 chrome:headless ./tests -s takeOnFails=true --disable-page-caching --disable-multiple-windows",
+    "test:chrome:headless": "testcafe chrome:headless ./tests -s takeOnFails=true --disable-page-caching --disable-multiple-windows",
+    "test:multiple:headless": "testcafe chrome:headless,firefox:headless,edge:headless ./tests -s takeOnFails=true --disable-page-caching --disable-multiple-windows"
+  },
+  "keywords": [
+    "TestCafe",
+    "Automation",
+    "AvantiUAT05"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^2.4.0"
+  },
+  "devDependencies": {
+    "prettier": "2.8.7",
+    "xpath-to-css": "^1.1.0"
+  },
+  "directories": {
+    "test": "tests"
+  }
+}
